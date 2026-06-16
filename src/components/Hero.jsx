@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react'
 import { Github, Linkedin, ExternalLink, ChevronDown, Code2, Terminal } from 'lucide-react'
+import photoImg from '../../public/photo.jpeg'
 
 const roles = ['Software Engineer', 'MERN Stack Developer', 'AI & ML Enthusiast', 'Problem Solver']
 
@@ -209,7 +210,7 @@ export default function Hero() {
                 <div className="rounded-full overflow-hidden w-64 h-64 lg:w-80 lg:h-80"
                   style={{ background: '#050816' }}>
                   <img
-                    src="/photo.jpeg"
+                    src={photoImg}
                     alt="Andala Kavi Babu"
                     className="w-full h-full object-cover object-top"
                     style={{ filter: 'contrast(1.05) brightness(1.05)' }}

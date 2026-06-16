@@ -1,5 +1,6 @@
 import React, { useRef, useEffect, useState } from 'react'
 import { User, MapPin, Mail, Cpu, Code2, Database, Brain } from 'lucide-react'
+import photoImg from '../../public/photo.jpeg'
 
 function useInView(threshold = 0.2) {
   const ref = useRef(null)
@@ -40,7 +41,7 @@ export default function About() {
               style={{ border: '1px solid rgba(99,102,241,0.15)' }}>
               <div className="flex items-center gap-4 mb-6">
                 <div className="relative">
-                  <img src="/photo.jpeg" alt="Kavi" className="w-20 h-20 rounded-xl object-cover object-top" />
+                  <img src={photoImg} alt="Kavi" className="w-20 h-20 rounded-xl object-cover object-top" />
                   <div className="absolute -bottom-1 -right-1 w-5 h-5 bg-green-400 rounded-full border-2 border-bg" />
                 </div>
                 <div>
